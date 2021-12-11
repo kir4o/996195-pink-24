@@ -1,10 +1,166 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
-  <title>Catalog</title>
+  <title>HTML Academy: Пинк - Фотографии пользователей</title>
 </head>
-<body>
+<body class="page__body">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <a class="page-header__logo-image" href="index.html">
+      <img src="img/pink.svg" width="74" height="23" alt="Перейти на главную">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item "><a href="index.html">Главная</a></li>
+        <li class="main-nav__item main-nav__item--active"><a>Фотографии</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
+      </ul>
+    </nav>
+    <section class="intro">
+      <h1 class="intro__slogan">Фотографии пользователей</h1>
+    </section>
+  </div>
+</header>
+<main class="page-main">
+  <section class="photo">
+    <h2 class="visually-hidden">Список фотографий пользователей</h2>
+    <p class="photo__description"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </p>
 
+    <ul class="photos-wrapper">
+      <li class="photo-content">
+        <a class="photo-content__picture-panorama" href="#" target="_blank"><img src="img/photos/panorama-tablet.png" alt="Панорама дня"></a>
+        <span class="photo-content__label">Панорама дня</span>
+        <div class="photo-content__wrapper">
+          <p class="photo-content__title">Анна<span>(5 минут назад)</span></p>
+          <p class="photo-content__description">Прыгать или нет? Напишите в
+            комментарии свой совет и
+            смотрите прямую трансляцию в
+            перископе, задавайте свои вопросы!</p>
+          <p class="photo-content__likes">Нравится: 215</p>
+        </div>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-1-mobile.png" alt="Дядя любит ВАГ"></a>
+        <div class="photo-content__wrapper">
+          <p class="photo-content__title">Левон<span>(5 часов назад)</span></p>
+          <p class="photo-content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <p class="photo-content__likes">Нравится: 356</p>
+        </div>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-2-mobile.png" alt="Соседи страдать!"></a>
+        <div class="photo-content__wrapper">
+          <p class="photo-content__title">Антон<span>(12 часов назад)</span></p>
+          <p class="photo-content__description">Соседи будут рады!</p>
+          <p class="photo-content__likes">Нравится: 666</p>
+        </div>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-3-tablet.png" alt="Чувак рефлексирует"></a>
+        <p class="photo-content__title">Борис<span>(20 часов назад)</span></p>
+        <p class="photo-content__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+        <p class="photo-content__likes">Нравится: 215</p>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-4-tablet.png" alt="Арбузы топчик"></a>
+        <p class="photo-content__title">Сергей<span>(25 часов назад)</span></p>
+        <p class="photo-content__description">Самая кубанская в мире!</p>
+        <p class="photo-content__likes">Нравится: 4</p>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-5-tablet.png" alt="Снега нет"></a>
+        <p class="photo-content__title">Максим<span>(40 часов назад)</span></p>
+        <p class="photo-content__description">Где снег-то?</p>
+        <p class="photo-content__likes">Нравится: 150</p>
+      </li>
+
+      <li class="photo-content">
+        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-6-tablet.png" alt="Смотрите, я улетела в отпуск"></a>
+        <p class="photo-content__title">Надежда<span>(45 часов назад)</span></p>
+        <p class="photo-content__description">Всем GM и взаимные лайки!</p>
+        <p class="photo-content__likes">Нравится: 2560</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="upload-photo">
+    <h3 class="upload-photo__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
+
+    <form action="https://echo.htmlacademy.ru" method="post" class="upload-photo-form">
+      <a class="upload-photo__picture" href="#" target="_blank">
+        <img src="img/photos/photo-7-tablet.png" alt="Загрузить фотографию">
+      </a>
+
+      <div class="filter-controls">
+        <button class="filter-controls__item-crop filter-controls__item-crop--active">
+          <span class="visually-hidden">Изменить размер</span>
+        </button>
+        <button class="filter-controls__item-fill">
+          <span class="visually-hidden">Изменить заливку</span>
+        </button>
+        <button class="filter-controls__item-contrast">
+          <span class="visually-hidden">Изменить контраст</span>
+        </button>
+      </div>
+      <div class="range-controls">
+        <label class="range-controls__item">
+          <span class="visually-hidden">Управление размером</span>
+          <input class="range-controls__input" type="range" min="1" max="100" step="1" value="80">
+        </label>
+        <label class="range-controls__item">
+          <span class="visually-hidden">Управление заливкой</span>
+          <input class="range-controls__input" type="range" min="1" max="100" step="1" value="80">
+        </label>
+        <label class="range-controls__item">
+          <span class="visually-hidden">Управление контрастом</span>
+          <input class="range-controls__input" type="range" min="1" max="100" step="1" value="80">
+        </label>
+      </div>
+
+      <div class="upload-photo-actions">
+        <button class="upload-photo__button upload-photo__button--active" type="submit">Запостить</button>
+        <button class="upload-photo__button upload-photo__button--disabled" type="reset">Отмена</button>
+      </div>
+
+    </form>
+  </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__logo">
+      <a href="index.html"><img src="img/pink_footer.svg" width="74" height="23" alt="Перейти на главную"></a>
+    </div>
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано:</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="img/htmlacademy.svg" width="74" height="23" alt="Перейти на сайт академии">
+      </a>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
