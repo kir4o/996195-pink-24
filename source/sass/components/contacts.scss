@@ -1,0 +1,36 @@
+.contacts {
+  padding: 50px 20px 43px 20px;
+}
+
+.contacts__slogan {
+  color: $primary-text-color;
+  line-height: 120%;
+  font-size: 24px;
+  margin: 0;
+  text-align: center;
+}
+
+.contacts__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contacts__item {
+  margin: 25px 0;
+}
+
+.contacts__title {
+  color: $primary-text-color;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.contacts__description {
+  color: $primary-color;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  margin: 0;
+}

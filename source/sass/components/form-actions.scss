@@ -1,0 +1,12 @@
+.form-actions {
+  margin-top: 47px;
+}
+
+.form-actions__legend {
+  text-align: center;
+  color: $primary-text-color;
+
+  & span {
+    color: $primary-color;
+  }
+}

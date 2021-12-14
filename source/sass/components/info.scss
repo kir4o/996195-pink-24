@@ -1,0 +1,20 @@
+.info {
+  //padding: 46px 20px 70px 20px;
+}
+
+.info__slogan {
+  padding: 29px 20px 44px 20px;
+  color: $primary-text-color;
+
+  h2 {
+    line-height: 28.8px;
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    margin: 22px 0;
+  }
+}

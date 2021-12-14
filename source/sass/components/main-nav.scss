@@ -1,0 +1,23 @@
+.main-nav {
+  position: absolute;
+
+  //временно
+  display: none;
+}
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  & a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.main-nav__item {
+  line-height: 32px;
+  font-weight: bold;
+  width: auto;
+}

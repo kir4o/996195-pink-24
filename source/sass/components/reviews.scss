@@ -1,0 +1,35 @@
+.reviews {
+  //ОБДУМАТЬ как еще можно перекрыть вышестоящий абсолютный фон без отрицательного марджина
+  margin-top: -20px;
+  background: $base-bg-color;
+  z-index: 99;
+  position: relative;
+}
+
+.reviews__wrapper {
+  padding: 39px 20px 0 20px;
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.reviews__title {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.reviews__description {
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.reviews__toggles {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 0 0;
+}

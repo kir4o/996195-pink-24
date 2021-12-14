@@ -1,0 +1,30 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 29px 20px 38px 20px;
+  align-items: center;
+}
+
+.intro__slogan {
+  margin: 0;
+  text-align: center;
+  line-height: 120%;
+  font-weight: 300;
+  font-size: 24px;
+  width: 280px;
+}
+
+.intro__button {
+  margin-top: 332px;
+  color: $secondary-text-color;
+  border: 3px solid #ffffff;
+  width: 280px;
+}
+
+.intro__availability {
+  margin: 0;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+  width: 280px;
+}
