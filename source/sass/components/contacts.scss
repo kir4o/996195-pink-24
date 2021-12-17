@@ -11,8 +11,7 @@
 }
 
 .contacts__list {
-  list-style: none;
-  padding: 0;
+  @include clear-list;
 }
 
 .contacts__item {
@@ -22,7 +21,7 @@
 .contacts__title {
   color: $primary-text-color;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   margin: 0;
 }

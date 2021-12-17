@@ -1,0 +1,25 @@
+.form-input-text {
+  display: block;
+  width: 100%;
+
+  span {
+    display: block;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding-left: 24px;
+  }
+
+  input {
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: $primary-text-color;
+  }
+
+  textarea {
+    display: block;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: $primary-text-color;
+  }
+}

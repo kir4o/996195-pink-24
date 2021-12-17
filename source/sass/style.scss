@@ -2,12 +2,16 @@
 @import "./global/variables";
 @import "./global/global";
 @import "./global/fonts";
+@import "./global/mixins";
+@import "./global/visually-hidden";
 
 //components
 @import "./components/button";
 @import "./components/field-input";
 @import "./components/page-footer";
 @import "./components/slider";
+@import "./components/form-input-text";
+@import "./components/choice";
 
 //index.html
 @import "./components/page-header";
@@ -21,15 +25,11 @@
 @import "./components/price";
 @import "./components/contacts";
 @import "./components/slider-toggles";
+@import "./components/price-table";
 
 //form.html
 @import "./components/secondary";
 @import "./components/form";
-@import "./components/form-fio";
-@import "./components/form-achievements";
-@import "./components/form-contacts";
-@import "./components/form-application";
-@import "./components/form-emotions";
 @import "./components/form-actions";
 @import "./components/form-set-header";
 @import "./components/modal";

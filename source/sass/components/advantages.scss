@@ -2,7 +2,7 @@
   position: relative;
   z-index: 1;
 
-  & ::before {
+  &::before {
     content: "";
     position: absolute;
     top: -30px;
@@ -11,17 +11,16 @@
     right: 0;
     z-index: -5;
     background-color: $secondary-bg-color;
-    transform: skewY(-6deg);
+    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
   }
 }
 
 .advantages__wrapper {
   background-color: $secondary-bg-color;
-  padding: 20px 20px 5px 20px;
+  padding: 48px 20px 0 20px;
 }
 
 .advantages__item {
-  margin-bottom: 43px;
   line-height: 24px;
 
   &:last-child {
@@ -30,24 +29,23 @@
 }
 
 .advantages__list {
-  list-style: none;
-  padding: 0;
+  @include clear-list;
 }
 
 .advantages__title {
-  margin: 0 0 22px 0;
   font-size: 18px;
   text-align: center;
 }
 
 .advantages__description {
   margin: 0;
+  padding: 20px 0;
   color: $primary-text-color;
   text-align: center;
 }
 
 .advantages__image {
-  margin: 45px auto 0;
+  margin: 25px auto 0;
   display: block;
   overflow: hidden;
   width: 160px;

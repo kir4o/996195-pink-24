@@ -32,7 +32,7 @@
         <li class="main-nav__item "><a href="index.html">Главная</a></li>
         <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
         <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
-        <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a></li>
       </ul>
     </nav>
   </div>
@@ -49,75 +49,76 @@
       миль на вашу бонусную карту!
     </h2>
     <form action="https://echo.htmlacademy.ru" method="post" class="form__wrapper">
-      <fieldset class="form-fio">
-        <label class="form-fio__item">
-          <span class="form-fio__field-name">Фамилия:</span>
-          <input class="field-input" type="text" name="surname" placeholder="Укажите фамилию *" required>
+      <fieldset class="form__fio">
+        <h3 class="visually-hidden">ФИО</h3>
+        <label class="form-input-text form__fio-input-text">
+          <span>Фамилия:</span>
+          <input type="text" name="surname" placeholder="Укажите фамилию *" required>
         </label>
-        <label class="form-fio__item">
-          <span class="form-fio__field-name">Имя:</span>
-          <input class="field-input" type="text" name="firstname" placeholder="Введите ваше имя *" required>
+        <label class="form-input-text form__fio-input-text">
+          <span>Имя:</span>
+          <input type="text" name="firstname" placeholder="Введите ваше имя *" required>
         </label>
-        <label class="form-fio__item">
-          <span class="form-fio__field-name">Отчество:</span>
-          <input class="field-input" type="text" name="middlename" placeholder="Ну и отчество тоже">
+        <label class="form-input-text form__fio-input-text">
+          <span>Отчество:</span>
+          <input type="text" name="middlename" placeholder="Ну и отчество тоже">
         </label>
       </fieldset>
-      <fieldset class="form-achievements">
+      <fieldset class="form__achievements">
         <h3 class="form-set-header">Ваши безбашенные достижения в путешествии</h3>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="selfie-made" checked>
-          <span class="form-achievements__field-name">Сделал селфи с акулой</span>
+        <label class="choice form__choice">
+          <input type="checkbox" name="selfie-made" checked>
+          <span>Сделал селфи с акулой</span>
         </label>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="burned-out" checked>
-          <span class="form-achievements__field-name">Обгорел на пляже</span>
+        <label class="choice form__choice">
+          <input type="checkbox" name="burned-out" checked>
+          <span>Обгорел на пляже</span>
         </label>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="chuck-seen">
-          <span class="form-achievements__field-name">Видел Чака Норриса</span>
+        <label class="choice form__choice">
+          <input type="checkbox" name="chuck-seen">
+          <span>Видел Чака Норриса</span>
         </label>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="souvenirs-bought">
-          <span class="form-achievements__field-name">Накупил сувениров</span>
+        <label class="choice form__choice">
+          <input type="checkbox" name="souvenirs-bought">
+          <span>Накупил сувениров</span>
         </label>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="tower-kept" checked>
-          <span class="form-achievements__field-name">Удержал башню</span>
+        <label class="choice form__choice">
+          <input type="checkbox" name="tower-kept" checked>
+          <span>Удержал башню</span>
         </label>
-        <label class="form-achievements__item">
-          <input class="form-achievements__input" type="checkbox" name="hotel-destroyed" checked>
-          <span class="form-achievements__field-name">Разгромил отель</span>
-        </label>
-      </fieldset>
-      <fieldset class="form-contacts">
-        <label class="form-contacts__item">
-          <span class="form-contacts__field-name">Номер телефона</span>
-          <input class="field-input form-contacts__input" type="tel" name="phone" placeholder="Номер, пожалуйста">
-        </label>
-        <label class="form-contacts__item">
-          <span class="form-contacts__field-name">Адрес почты</span>
-          <input class="field-input form-contacts__input" type="email" name="email" placeholder="Введите почту *" required>
+        <label class="choice form__choice">
+          <input type="checkbox" name="hotel-destroyed" checked>
+          <span>Разгромил отель</span>
         </label>
       </fieldset>
-      <fieldset class="form-application">
+      <fieldset class="form__contacts">
+        <label class="form-input-text form-input-text--phone form__fio-input-text">
+          <span>Номер телефона</span>
+          <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+        </label>
+        <label class="form-input-text form-input-text--email form__fio-input-text">
+          <span>Адрес почты</span>
+          <input type="email" name="email" placeholder="Введите почту *" required>
+        </label>
+      </fieldset>
+      <fieldset class="form__application">
         <h3 class="form-set-header">С каким приложением путешествовали?</h3>
-        <label class="form-application__item">
-          <input class="form-application__input" type="radio" name="application" checked value="ios">
-          <span class="form-application__field-name">Pink для iOS</span>
+        <label class="choice form__choice form__choice--radio">
+          <input type="radio" name="application" checked value="ios">
+          <span>Pink для iOS</span>
         </label>
-        <label class="form-application__item">
-          <input class="form-application__input" type="radio" name="application" value="android">
-          <span class="form-application__field-name">Pink на Android</span>
+        <label class="choice form__choice form__choice--radio">
+          <input type="radio" name="application" value="android">
+          <span>Pink на Android</span>
         </label>
-        <label class="form-application__item">
-          <input class="form-application__input" type="radio" name="application" value="windows">
-          <span class="form-application__field-name">Windows Phone</span>
+        <label class="choice form__choice form__choice--radio">
+          <input type="radio" name="application" value="windows">
+          <span>Windows Phone</span>
         </label>
       </fieldset>
-      <fieldset class="form-emotions">
+      <fieldset class="form__emotions">
         <h3 class="form-set-header">Опишите свои эмоции</h3>
-        <label class="form-emotions__item">
+        <label class="form-input-text form__textarea">
           <textarea class="field-input" name="emotions" rows="6">Можно прям в красках, не стесняясь в выражениях</textarea>
         </label>
       </fieldset>

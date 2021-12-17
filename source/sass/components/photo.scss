@@ -5,13 +5,12 @@
 
 .photo__description {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
-  color: #283645;
+  color: $primary-text-color;
   padding-bottom: 49px;
 }
 
 .photo__wrapper {
-  list-style: none;
-  padding: 0;
+  @include clear-list;
 }

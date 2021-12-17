@@ -1,8 +1,5 @@
 .reviews {
-  //ОБДУМАТЬ как еще можно перекрыть вышестоящий абсолютный фон без отрицательного марджина
-  margin-top: -20px;
   background: $base-bg-color;
-  z-index: 99;
   position: relative;
 }
 
@@ -11,9 +8,7 @@
 }
 
 .reviews__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include clear-list;
 }
 
 .reviews__title {
@@ -23,6 +18,8 @@
 }
 
 .reviews__description {
+  margin: 0;
+  padding: 10px 0;
   text-align: center;
   color: $primary-text-color;
 }
