@@ -1,0 +1,32 @@
+.reviews {
+  background: $base-bg-color;
+  position: relative;
+}
+
+.reviews__wrapper {
+  padding: 39px 20px 0 20px;
+}
+
+.reviews__list {
+  @include clear-list;
+}
+
+.reviews__title {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.reviews__description {
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.reviews__toggles {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 24px 0 0 0;
+}

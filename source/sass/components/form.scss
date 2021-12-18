@@ -1,0 +1,50 @@
+.form {
+  padding: 54px 0 26px 0;
+}
+
+.form__title {
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.form__fio {
+  margin-top: 26px;
+  padding: 0 20px;
+  border: none;
+}
+
+.form__fio-input-text {
+  margin: 20px 0;
+}
+
+.form__achievements {
+  margin-top: 26px;
+  padding: 0 20px 40px;
+  border: none;
+  background-color: $secondary-bg-color;
+}
+
+.form__choice {
+  margin: 22px 0;
+}
+
+.form__contacts {
+  margin-top: 18px;
+  padding: 0 20px;
+  border: none;
+}
+
+.form__application {
+  margin-top: 26px;
+  padding: 0 20px 28px;
+  border: none;
+  background-color: $secondary-bg-color;
+}
+
+.form__emotions {
+  padding: 0 20px;
+  border: none;
+}

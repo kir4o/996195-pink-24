@@ -1,0 +1,21 @@
+.main-nav {
+  position: absolute;
+
+  //временно
+  display: none;
+}
+
+.main-nav__list {
+  @include clear-list;
+
+  a {
+    color: $secondary-text-color;
+    text-decoration: none;
+  }
+}
+
+.main-nav__item {
+  line-height: 32px;
+  font-weight: 700;
+  width: auto;
+}

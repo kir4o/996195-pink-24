@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $base-bg-color;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,16 @@
+.photo {
+  color: $primary-text-color;
+  padding: 40px 0 20px;
+}
+
+.photo__description {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  color: $primary-text-color;
+  padding-bottom: 49px;
+}
+
+.photo__wrapper {
+  @include clear-list;
+}

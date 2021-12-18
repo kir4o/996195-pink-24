@@ -1,0 +1,21 @@
+.price {
+  position: relative;
+  z-index: 1;
+  padding-top: 132px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -5;
+    background-color: $secondary-bg-color;
+    clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.price__toggles {
+  padding: 47px 0;
+}
