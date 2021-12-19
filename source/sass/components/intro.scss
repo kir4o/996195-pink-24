@@ -1,30 +1,51 @@
 .intro {
-  display: flex;
-  flex-direction: column;
-  padding: 29px 20px 38px 20px;
-  align-items: center;
+  color: $secondary-text-color;
+  background: url("../img/phone-mobile.png") 50% 176px/320px no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background: url("../img/phone-mobile.png") 100% 78px/424px no-repeat;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: url("../img/phone-mobile.png") 70% 0/596px no-repeat;
+  }
 }
 
 .intro__slogan {
-  margin: 0;
+  margin: 0 auto;
+  padding: 40px 0;
   text-align: center;
   line-height: 120%;
   font-weight: 300;
   font-size: 24px;
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 40px;
+    padding: 50px 30px 0 30px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 100px;
+    font-size: 50px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
 }
 
-.intro__button {
-  margin-top: 332px;
+.intro__wrapper {
+  margin-top: 325px;
+  padding: 20px;
   color: $secondary-text-color;
-  border: 3px solid $base-bg-color;
-  width: 280px;
-}
 
-.intro__availability {
-  margin: 0;
-  line-height: 24px;
-  font-weight: 300;
-  text-align: center;
-  width: 280px;
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    width: 600px;
+    display: block;
+    position: relative;
+    background: transparent;
+  }
 }

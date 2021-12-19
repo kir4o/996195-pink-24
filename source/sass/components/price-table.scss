@@ -1,14 +1,23 @@
 .price-table {
   border-collapse: collapse;
   width: 100%;
+  margin: 0 auto;
 }
 
 .price-table__head-cell {
   font-size: 16px;
   height: 92px;
+  min-width: 250px;
   background-color: $primary-text-color;
   color: $secondary-text-color;
   font-weight: 700;
+  text-transform: uppercase;
+  border: 2px solid $secondary-text-color;
+
+  @media (min-width: $tablet-width) {
+    min-width: 149px;
+    height: 75px;
+  }
 
   span {
     display: block;
@@ -17,6 +26,19 @@
   }
 
   &--hidden {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      min-width: 150px;
+      display: block;
+      background: none;
+      border: none;
+    }
+  }
+}
+
+.price-table__cell {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

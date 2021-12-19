@@ -18,18 +18,83 @@
 .advantages__wrapper {
   background-color: $secondary-bg-color;
   padding: 48px 20px 0 20px;
-}
+  display: flex;
+  position: relative;
+  justify-content: center;
 
-.advantages__item {
-  line-height: 24px;
-
-  &:last-child {
-    margin-bottom: 0;
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -300px;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 300px;
+      height: 476px;
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
   }
 }
 
 .advantages__list {
   @include clear-list;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding-left: 300px;
+  }
+}
+
+.advantages__item {
+  line-height: 24px;
+  max-width: 250px;
+
+  &--image::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 300px;
+    margin: 0 auto;
+    background: url("../img/iphone3.png") 50% 40px/contain no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    &--pic1::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+
+    &--pic2::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+
+    &--pic3::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .advantages__title {
@@ -44,10 +109,14 @@
   text-align: center;
 }
 
-.advantages__image {
-  margin: 25px auto 0;
-  display: block;
-  overflow: hidden;
-  width: 160px;
-  height: 278px;
-}
+//.advantages__image {
+//  margin: 25px auto 0;
+//  display: block;
+//  overflow: hidden;
+//  width: 160px;
+//  height: 278px;
+//
+//  @media (min-width: $desktop-width) {
+//    display: none;
+//  }
+//}

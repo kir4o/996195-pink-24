@@ -1,20 +1,78 @@
 .reviews {
   background: $base-bg-color;
   position: relative;
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 79px;
+      height: 79px;
+      margin: 0 auto;
+      background: url("../img/quotes.svg") no-repeat center;
+    }
+  }
 }
 
 .reviews__wrapper {
   padding: 39px 20px 0 20px;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    padding: 39px 60px 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 130px 0 130px;
+  }
 }
 
 .reviews__list {
   @include clear-list;
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 60px;
+  }
+}
+
+.reviews__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .reviews__title {
   margin: 0;
-  font-size: 18px;
+  font-size: 24px;
+  font-weight: 700;
   text-align: center;
+  display: flex;
+  order: 1;
+  flex-direction: column;
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    padding: 20px 0;
+
+    span {
+      display: flex;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 30px;
+      justify-content: center;
+      color: $primary-text-color;
+    }
+  }
 }
 
 .reviews__description {
@@ -22,6 +80,39 @@
   padding: 10px 0;
   text-align: center;
   color: $primary-text-color;
+  display: flex;
+  order: 2;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 10px 60px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 30px;
+      height: 42px;
+      margin: 0 auto;
+      background: url("../img/left_arrow.svg") no-repeat center;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 25%;
+      right: 0;
+      width: 30px;
+      height: 42px;
+      margin: 0 auto;
+      background: url("../img/right_arrow.svg") no-repeat center;
+    }
+  }
 }
 
 .reviews__toggles {
@@ -29,4 +120,8 @@
   display: flex;
   justify-content: center;
   padding: 24px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

@@ -1,11 +1,19 @@
 .page-header {
-  background: url("../img/phone-mobile.png") 50% 176px/320px no-repeat, url("../img/back-mobile.png") 0 0/cover no-repeat;
-  color: $secondary-text-color;
-  height: 733px;
+  background-image: url("../img/back-mobile.png");
+  background-size: 100% 527px;
+  background-repeat: no-repeat;
+  background-color: $main-fill-color;
+
+  @media (min-width: $tablet-width) {
+    background-size: cover;
+  }
 }
 
 .page-header__wrapper {
   padding: 21px 20px 21px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
   &::before {
     content: "";
@@ -16,6 +24,10 @@
     width: 100%;
     height: 66px;
     position: absolute;
+
+    @media (min-width: $tablet-width) {
+      height: 110px;
+    }
   }
 
   a[href]:hover {

@@ -16,6 +16,31 @@
   }
 }
 
+.price__wrapper {
+  padding: 20px;
+  overflow: hidden;
+
+  @media (min-width: $desktop-width) {
+    padding: 0 130px;
+  }
+}
+
+.price__slider {
+  transform: translate(-33.3%);
+  width: 300%;
+  transition: transform 1s ease;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    transform: translate(0);
+  }
+}
+
 .price__toggles {
-  padding: 47px 0;
+  text-align: center;
+  margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

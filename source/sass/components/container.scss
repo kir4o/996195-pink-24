@@ -1,0 +1,14 @@
+//контейнер, который будет ограничивать контентную часть блоков в зависимости от размеров вьюпорта
+
+.container {
+  margin: 0 auto;
+  width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
