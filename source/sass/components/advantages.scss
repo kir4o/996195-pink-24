@@ -22,7 +22,7 @@
   position: relative;
   justify-content: center;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     &::before {
       content: "";
       display: block;
@@ -48,7 +48,7 @@
     flex-direction: row;
   }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding-left: 300px;
   }
 }

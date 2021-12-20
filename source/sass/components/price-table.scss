@@ -38,7 +38,11 @@
 }
 
 .price-table__cell {
-  @media (min-width: $tablet-width) {
-    display: none;
+  border: 1px solid $primary-text-color;
+
+  &--hidden {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
