@@ -2,21 +2,19 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: flex;
+    display: block;
     padding: 50px 20px;
-    justify-content: center;
   }
 }
 
 .effect__wrapper {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .effect__text {
-  flex-direction: column;
-  display: flex;
-  align-content: flex-start;
-  justify-content: center;
+  display: block;
   padding: 0 40px;
   max-width: 380px;
 }

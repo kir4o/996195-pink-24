@@ -32,10 +32,6 @@
 .reviews__list {
   @include clear-list;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: flex;
-  }
-
   @media (min-width: $desktop-width) {
     margin-top: 60px;
   }
@@ -43,7 +39,6 @@
 
 .reviews__item {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
 
@@ -52,9 +47,6 @@
   font-size: 24px;
   font-weight: 700;
   text-align: center;
-  display: flex;
-  order: 1;
-  flex-direction: column;
 
   span {
     display: none;
@@ -65,11 +57,10 @@
     padding: 20px 0;
 
     span {
-      display: flex;
+      display: block;
       font-size: 14px;
       font-weight: 400;
       line-height: 30px;
-      justify-content: center;
       color: $primary-text-color;
     }
   }
@@ -80,8 +71,6 @@
   padding: 10px 0;
   text-align: center;
   color: $primary-text-color;
-  display: flex;
-  order: 2;
 
   @media (min-width: $tablet-width) {
     order: 1;
@@ -117,8 +106,7 @@
 
 .reviews__toggles {
   margin: 0;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   padding: 24px 0 0 0;
 
   @media (min-width: $desktop-width) {

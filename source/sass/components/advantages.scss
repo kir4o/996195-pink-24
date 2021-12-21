@@ -18,11 +18,11 @@
 .advantages__wrapper {
   background-color: $secondary-bg-color;
   padding: 48px 20px 0 20px;
-  display: flex;
   position: relative;
-  justify-content: center;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding: 0 20px 0 20px;
+
     &::before {
       content: "";
       display: block;
@@ -33,29 +33,34 @@
       bottom: 0;
       margin: 0 auto;
       width: 300px;
-      height: 476px;
       background: url("../img/iphone3.png") 50% 0/contain no-repeat;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
   }
 }
 
 .advantages__list {
   @include clear-list;
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $desktop-width) {
-    flex-direction: row;
-  }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     padding-left: 300px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
   }
 }
 
 .advantages__item {
   line-height: 24px;
   max-width: 250px;
+  margin: 0 auto;
 
   &--image::after {
     content: "";
@@ -100,23 +105,16 @@
 .advantages__title {
   font-size: 18px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description {
-  margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   color: $primary-text-color;
   text-align: center;
 }
-
-//.advantages__image {
-//  margin: 25px auto 0;
-//  display: block;
-//  overflow: hidden;
-//  width: 160px;
-//  height: 278px;
-//
-//  @media (min-width: $desktop-width) {
-//    display: none;
-//  }
-//}
