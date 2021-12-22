@@ -17,11 +17,10 @@
 
 .advantages__wrapper {
   background-color: $secondary-bg-color;
-  padding: 48px 20px 0 20px;
+  padding-top: 48px;
   position: relative;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding: 0 20px 0 20px;
 
     &::before {
       content: "";

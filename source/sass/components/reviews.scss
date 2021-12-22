@@ -18,15 +18,7 @@
 }
 
 .reviews__wrapper {
-  padding: 39px 20px 0 20px;
-
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    padding: 39px 60px 0 60px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 39px 130px 0 130px;
-  }
+  padding-top: 39px;
 }
 
 .reviews__list {

@@ -1,7 +1,27 @@
 .main-nav {
+  position: absolute;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: $primary-text-color;
 
-  //временно
-  display: none;
+  &--closed {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+      background-color: transparent;
+    }
+  }
+
+  &--opened {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }
 
 .main-nav__list {
@@ -11,10 +31,28 @@
     color: $secondary-text-color;
     text-decoration: none;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
 }
 
 .main-nav__item {
+  display: block;
   line-height: 32px;
   font-weight: 700;
   width: auto;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+    font-size: 18px;
+    font-weight: 400;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }

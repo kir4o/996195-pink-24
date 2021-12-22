@@ -9,25 +9,25 @@
   }
 }
 
+.page-header__toggle {
+  z-index: 99;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
 .page-header__wrapper {
-  padding: 21px 20px 21px 20px;
-  position: relative;
-  display: flex;
-  align-items: center;
+  height: 66px;
+  background-color: $headers-text-color-opacity;
 
-  &::before {
-    content: "";
-    background-color: $headers-text-color;
-    opacity: 0.3;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 66px;
-    position: absolute;
+  &--opened {
+    background-color: $primary-text-color;
+  }
 
-    @media (min-width: $tablet-width) {
-      height: 110px;
-    }
+  @media (min-width: $tablet-width) {
+    height: 110px;
   }
 
   a[href]:hover {
@@ -39,10 +39,18 @@
   }
 }
 
+.page-header__wrapper-container {
+  height: 66px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    height: 110px;
+  }
+}
+
 .page-header__logo-image {
-  display: block;
   width: 73px;
   height: 23px;
-  fill: $base-bg-color;
-  position: relative;
 }

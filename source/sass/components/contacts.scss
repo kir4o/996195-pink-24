@@ -1,5 +1,5 @@
 .contacts {
-  padding: 50px 20px 43px 20px;
+  padding: 50px 0 43px 0;
 }
 
 .contacts__slogan {
@@ -21,16 +21,12 @@
 
 .contacts__list {
   @include clear-list;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  @media (min-width: $desktop-width) {
-    max-width: 960px;
-    margin: 0 auto;
   }
 }
 

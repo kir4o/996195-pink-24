@@ -17,12 +17,7 @@
 }
 
 .price__wrapper {
-  padding: 20px;
   overflow: hidden;
-
-  @media (min-width: $desktop-width) {
-    padding: 0 130px;
-  }
 }
 
 .price__slider {
