@@ -11,10 +11,20 @@
     font-weight: 300;
     font-size: 24px;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 40px;
+      max-width: 660px;
+      margin: 0 auto;
+    }
   }
 
   span {
     display: block;
     margin: 22px 0;
+
+    @media (min-width: $tablet-width) {
+      line-height: 55px;
+    }
   }
 }

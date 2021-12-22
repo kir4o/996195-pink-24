@@ -1,10 +1,19 @@
 //colors
 $base-bg-color: #ffffff;
 $secondary-bg-color: #f2f2f2;
+$main-fill-color: #1d2631;
 
 $primary-text-color: #283645;
+$primary-text-color-opacity: rgba(40, 54, 69, 0.3);
 $headers-text-color: #000000;
+$headers-text-color-opacity: rgba(0, 0, 0, 0.3);
 $secondary-text-color: #ffffff;
 
 $primary-color: #d22856;
 $success-color: #2aab6d;
+
+
+// Viewports
+$tablet-width: 660px;
+$tablet-width-only: 1199px;
+$desktop-width: 1200px;

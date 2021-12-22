@@ -17,37 +17,103 @@
 
 .advantages__wrapper {
   background-color: $secondary-bg-color;
-  padding: 48px 20px 0 20px;
+  padding-top: 48px;
+  position: relative;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: -300px;
+      right: 0;
+      bottom: 0;
+      margin: 0 auto;
+      width: 300px;
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.advantages__list {
+  @include clear-list;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+    padding-left: 300px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .advantages__item {
   line-height: 24px;
+  max-width: 250px;
+  margin: 0 auto;
+
+  &--image::after {
+    content: "";
+    display: block;
+    width: 240px;
+    height: 300px;
+    margin: 0 auto;
+    background: url("../img/iphone3.png") 50% 40px/contain no-repeat;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      display: block;
+      width: 240px;
+      height: 300px;
+      margin: 0 auto;
+    }
+
+    &--pic1::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+
+    &--pic2::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+
+    &--pic3::before {
+      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+    }
+  }
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.advantages__list {
-  @include clear-list;
-}
-
 .advantages__title {
   font-size: 18px;
   text-align: center;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 40px;
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .advantages__description {
-  margin: 0;
-  padding: 20px 0;
+  padding: 10px 0;
   color: $primary-text-color;
   text-align: center;
-}
-
-.advantages__image {
-  margin: 25px auto 0;
-  display: block;
-  overflow: hidden;
-  width: 160px;
-  height: 278px;
 }
