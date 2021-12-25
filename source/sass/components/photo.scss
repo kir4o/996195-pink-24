@@ -1,6 +1,6 @@
 .photo {
   color: $primary-text-color;
-  padding: 40px 0 20px;
+  padding: 40px 0;
 }
 
 .photo__description {
@@ -13,4 +13,10 @@
 
 .photo__wrapper {
   @include clear-list;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

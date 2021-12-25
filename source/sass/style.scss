@@ -29,7 +29,6 @@
 @import "./components/price-table";
 
 //form.html
-@import "./components/secondary";
 @import "./components/form";
 @import "./components/form-actions";
 @import "./components/form-set-header";
@@ -39,6 +38,6 @@
 @import "./components/photo";
 @import "./components/photo-content";
 @import "./components/upload-photo";
-@import "./components/upload-photo-form";
-@import "./components/filter-controls";
 @import "./components/upload-photo-actions";
+@import "./components/filter-controls";
+@import "./components/range-controls";

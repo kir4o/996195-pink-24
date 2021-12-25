@@ -1,9 +1,24 @@
+.photo-content {
+  margin: 0 auto 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    //тут флекс сделал, чтобы работал flex-grow и карточки были одинаковой высоты
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--panorama {
+    width: 100%;
+  }
+}
+
 .photo-content__wrapper {
-  width: 240px;
-  margin: 0 auto;
   background-color: $secondary-bg-color;
   padding: 17px 20px;
   line-height: 24px;
+  flex-grow: 1;
+  position: relative;
 }
 
 .photo-content__picture-panorama {
@@ -29,13 +44,12 @@
 }
 
 .photo-content__picture {
-  width: 280px;
-  margin: 0 auto;
   display: block;
 
   img {
     display: block;
-    margin-top: 20px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 
@@ -49,8 +63,14 @@
   }
 }
 
+.photo-content__description {
+  margin-bottom: 34px;
+}
+
 .photo-content__likes {
   margin: 0;
   color: $primary-color;
   line-height: 24px;
+  position: absolute;
+  bottom: 18px;
 }

@@ -21,7 +21,6 @@
   position: relative;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-
     &::before {
       content: "";
       display: block;
