@@ -1,19 +1,60 @@
 .form {
   padding: 54px 0 26px 0;
+
+  fieldset {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    border: none;
+  }
+
+  input {
+    margin-right: 0;
+  }
 }
 
 .form__title {
-  padding: 0 20px;
   font-size: 14px;
   font-weight: 400;
   text-align: center;
   color: $primary-text-color;
 }
 
+.form__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    max-width: 940px;
+    margin: 0 auto;
+  }
+}
+
+
 .form__fio {
-  margin-top: 26px;
-  padding: 0 20px;
-  border: none;
+  @media (min-width: $desktop-width) {
+    width: 49.9%;
+  }
+}
+
+.form__fio-container {
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 50%;
+    margin: 0;
+  }
 }
 
 .form__fio-input-text {
@@ -22,9 +63,12 @@
 
 .form__achievements {
   margin-top: 26px;
-  padding: 0 20px 40px;
-  border: none;
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+    background-color: transparent;
+  }
 }
 
 .form__choice {
@@ -34,17 +78,36 @@
 .form__contacts {
   margin-top: 18px;
   padding: 0 20px;
-  border: none;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
 }
 
 .form__application {
   margin-top: 26px;
-  padding: 0 20px 28px;
-  border: none;
   background-color: $secondary-bg-color;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 49.9%;
+  }
 }
 
 .form__emotions {
-  padding: 0 20px;
-  border: none;
+  @media (min-width: $tablet-width) {
+    order: 8;
+    width: 100%;
+  }
+}
+
+.form-actions {
+  @media (min-width: $tablet-width) {
+    order: 9;
+    width: 100%;
+  }
 }
