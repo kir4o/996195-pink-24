@@ -1,5 +1,13 @@
 .page-footer {
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 36px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 71px 0;
+  }
 }
 
 .page-footer__wrapper {
@@ -39,6 +47,14 @@
   @include clear-list;
 
   display: flex;
+
+  li {
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .page-footer__social-link {

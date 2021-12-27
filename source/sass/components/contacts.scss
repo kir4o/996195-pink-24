@@ -1,5 +1,6 @@
 .contacts {
-  padding: 50px 0 43px 0;
+  padding: 50px 0 0 0;
+  margin: 0 auto;
 }
 
 .contacts__slogan {
@@ -7,7 +8,6 @@
   line-height: 120%;
   font-size: 24px;
   font-weight: 300;
-  margin: 0;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -60,4 +60,41 @@
   text-align: center;
   display: block;
   margin: 0;
+}
+
+.contacts__map {
+  position: relative;
+
+  &::before {
+    background: $base-bg-color;
+    content: "";
+    width: 100%;
+    height: 33px;
+    position: absolute; /* Абсолютное позиционирование */
+    left: 0;
+    clip-path: polygon(100% 0, 50% 100%, 0 0);
+
+    @media (min-width: $tablet-width) {
+      height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 68px;
+    }
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    border: none;
+    height: 200px;
+
+    @media (min-width: $tablet-width) {
+      height: 374px;
+    }
+
+    @media (min-width: $desktop-width) {
+      height: 502px;
+    }
+  }
 }
