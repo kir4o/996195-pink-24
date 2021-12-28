@@ -12,12 +12,21 @@
     z-index: -5;
     background-color: $secondary-bg-color;
     clip-path: polygon(0 30px, 100% 0, 100% 100%, 0 100%);
+
+    @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
+      clip-path: polygon(0 54px, 100% 0, 100% 100%, 0 100%);
+    }
+
+    @media (min-width: $desktop-width) {
+      clip-path: polygon(0 100px, 100% 0, 100% 100%, 0 100%);
+      top: -5px;
+    }
   }
 }
 
 .advantages__wrapper {
   background-color: $secondary-bg-color;
-  padding-top: 48px;
+  padding-top: 51px;
   position: relative;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
@@ -25,46 +34,60 @@
       content: "";
       display: block;
       position: absolute;
-      top: 0;
-      left: -300px;
+      top: -22px;
+      left: -316px;
       right: 0;
       bottom: 0;
       margin: 0 auto;
       width: 300px;
-      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+      max-height: 480px;
+      background-image: url("../img/iphone3.png");
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-size: 269px auto;
+      background-position: -2px 0;
     }
   }
 
+  @media (min-width: $tablet-width) {
+    padding-top: 49px;
+    padding-bottom: 43px;
+    background-color: transparent;
+  }
+
   @media (min-width: $desktop-width) {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0;
   }
 }
 
 .advantages__list {
   @include clear-list;
+  text-align: center;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
-    padding-left: 300px;
-    text-align: center;
+    padding-left: 310px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: start;
   }
 }
 
 .advantages__item {
   line-height: 24px;
-  max-width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 31px auto;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   &--image::after {
     content: "";
     display: block;
-    width: 240px;
-    height: 300px;
+    height: 319px;
     margin: 0 auto;
     background: url("../img/iphone3.png") 50% 40px/contain no-repeat;
 
@@ -73,7 +96,21 @@
     }
   }
 
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      padding-top: 6px;
+    }
+  }
+
   @media (min-width: $desktop-width) {
+    width: 297.33px;
+    margin: 0;
+
+    &:last-child {
+      padding-top: 0;
+      margin-bottom: 31px;
+    }
+
     &::before {
       content: "";
       display: block;
@@ -83,36 +120,60 @@
     }
 
     &--pic1::before {
-      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+      background-image: url("../img/iphone3-1.png");
+      background-repeat: no-repeat;
+      background-size: 187px auto;
+      background-position: 23px 0;
     }
 
     &--pic2::before {
-      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+      background-image: url("../img/iphone3-2.png");
+      background-repeat: no-repeat;
+      background-size: 187px auto;
+      background-position: 26px 0;
     }
 
     &--pic3::before {
-      background: url("../img/iphone3.png") 50% 0/contain no-repeat;
+      background-image: url("../img/iphone3-3.png");
+      background-repeat: no-repeat;
+      background-size: 187px auto;
+      background-position: 28px 0;
     }
-  }
-
-  &:last-child {
-    margin-bottom: 0;
   }
 }
 
 .advantages__title {
   font-size: 18px;
-  text-align: center;
 
   @media (min-width: $desktop-width) {
-    margin-top: 40px;
+    margin: 56px auto 0 auto;
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
+    padding: 0 20px;
+  }
+}
+
+.advantages__title-br {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: inline;
   }
 }
 
 .advantages__description {
-  padding: 10px 0;
   color: $primary-text-color;
-  text-align: center;
+  margin: 12px 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 26px;
+  }
 }

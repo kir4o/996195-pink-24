@@ -1,11 +1,15 @@
 .page-header {
   background-image: url("../img/back-mobile.png");
-  background-size: 100% 527px;
+  background-size: 100% 462px;
   background-repeat: no-repeat;
   background-color: $main-fill-color;
 
   @media (min-width: $tablet-width) {
-    background-size: cover;
+    background-size: 100% 727px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100% 852px;
   }
 }
 

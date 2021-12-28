@@ -1,10 +1,11 @@
 .download-icons {
   text-align: center;
-  width: 279px;
+  width: 280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    width: 300px;
   }
 }
 
@@ -13,17 +14,76 @@
   color: $secondary-text-color;
   border: 3px solid $base-bg-color;
   margin-top: 30px;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $secondary-text-color;
+  }
+
+  &:active {
+    color: rgba($primary-color, 0.3);
+    background-color: $secondary-text-color;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 11px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 16px 0 0 0;
+    font-size: 21px;
+  }
 }
 
 .download-icons__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  align-items: baseline;
-  margin: 30px auto;
+  align-items: center;
+  justify-content: space-between;
+  margin: 34px auto 17px;
+  width: 242px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 71px;
+  }
+}
+
+.download-icons__item {
+  display: block;
+
+  &--apple {
+    background: url("../img/info-icons/apple-logo.svg") no-repeat center;
+    height: 56px;
+  }
+
+  &--android {
+    background: url("../img/info-icons/android-logo.svg") no-repeat center;
+    height: 47px;
+  }
+
+  &--microsoft {
+    background: url("../img/info-icons/microsoft-logo.svg") no-repeat center;
+    height: 50px;
+  }
 }
 
 .download-icons__availability {
   line-height: 24px;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    margin-top: 34px;
+    margin-bottom: 95px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
+    margin-bottom: 105px;
+  }
 }
