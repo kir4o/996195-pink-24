@@ -18,7 +18,12 @@
 }
 
 .reviews__wrapper {
-  padding-top: 39px;
+  padding-top: 40px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 119px;
+    padding-top: 49px;
+  }
 }
 
 .reviews__list {
@@ -36,7 +41,7 @@
 
 .reviews__title {
   margin: 0;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
 
@@ -47,6 +52,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     padding: 20px 0;
+    font-size: 20px;
 
     span {
       display: block;
@@ -56,27 +62,38 @@
       color: $primary-text-color;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    padding: 27px 0;
+
+    span {
+      font-size: 18px;
+    }
+  }
 }
 
 .reviews__description {
   margin: 0;
-  padding: 10px 0;
+  padding: 14px 0;
   text-align: center;
   color: $primary-text-color;
 
   @media (min-width: $tablet-width) {
     order: 1;
+    font-size: 18px;
+    padding: 53px 0 16px 0;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 10px 60px;
+    padding: 10px 85px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 25%;
-      left: 0;
+      top: 36%;
+      left: -4px;
       width: 30px;
       height: 42px;
       margin: 0 auto;
@@ -86,8 +103,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 25%;
-      right: 0;
+      top: 36%;
+      right: -4px;
       width: 30px;
       height: 42px;
       margin: 0 auto;
@@ -97,9 +114,8 @@
 }
 
 .reviews__toggles {
-  margin: 0;
   text-align: center;
-  padding: 24px 0 0 0;
+  padding: 16px 0 0 0;
 
   @media (min-width: $desktop-width) {
     display: none;

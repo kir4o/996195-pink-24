@@ -11,10 +11,7 @@
   }
 }
 
-.into__container {
-  position: relative;
-
-
+.intro__container {
   @media (min-width: $tablet-width) {
     background-image: url("../img/phone-tablet.png");
     background-repeat: no-repeat;

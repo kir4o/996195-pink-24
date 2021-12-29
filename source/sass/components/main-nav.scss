@@ -118,7 +118,7 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     padding-left: 20px;
   }

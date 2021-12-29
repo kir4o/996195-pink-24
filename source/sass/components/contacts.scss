@@ -1,9 +1,13 @@
 .contacts {
-  padding: 50px 0 0 0;
-  margin: 0 auto;
+  padding: 42px 0 0 0;
+
+  @media (min-width: $desktop-width) {
+    padding: 63px 0 0 0;
+  }
 }
 
 .contacts__slogan {
+  margin-bottom: 30px;
   color: $primary-text-color;
   line-height: 120%;
   font-size: 24px;
@@ -12,26 +16,54 @@
 
   @media (min-width: $tablet-width) {
     font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 56px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 50px;
+    line-height: 65px;
   }
 }
 
 .contacts__list {
   @include clear-list;
   margin: 0 auto;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
   }
 }
 
 .contacts__item {
-  margin: 25px 0;
+  margin-bottom: 17px;
+
+  a:hover {
+    text-decoration: underline;
+    color: $primary-text-color;
+  }
+
+  a:active {
+    color: rgba($primary-text-color, 0.3);
+  }
+
+  &:last-child {
+    @media (min-width: $tablet-width) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     width: 50%;
@@ -60,6 +92,20 @@
   text-align: center;
   display: block;
   margin: 0;
+  font-weight: 300;
+  text-decoration: none;
+
+  br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .contacts__map {
@@ -79,7 +125,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 68px;
+      height: 95px;
     }
   }
 
@@ -94,7 +140,7 @@
     }
 
     @media (min-width: $desktop-width) {
-      height: 502px;
+      height: 493px;
     }
   }
 }

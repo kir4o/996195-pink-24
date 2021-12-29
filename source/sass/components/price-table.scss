@@ -1,30 +1,51 @@
 .price-table {
   border-collapse: collapse;
   width: 100%;
-  margin: 0 auto;
+  margin: 4px auto 0 auto;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 32px;
+  }
 }
 
 .price-table__head-cell {
   font-size: 16px;
-  min-width: 250px;
+  min-width: 252px;
   background-color: $primary-text-color;
   color: $secondary-text-color;
   font-weight: 700;
   text-transform: uppercase;
   border-right: 2px solid $secondary-text-color;
+  padding: 9px 13px 28px 13px;
+  position: relative;
+  overflow: hidden;
 
   &:last-child {
     border-right: none;
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 149px;
+    min-width: 124px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    min-width: 152px;
+    padding-top: 16px;
+    padding-bottom: 22px;
+    padding-left: 18px;
   }
 
   span {
     display: block;
     font-weight: 300;
     font-size: 18px;
+
+    @media (min-width: $desktop-width) {
+      font-size: 24px;
+    }
   }
 
   &--hidden {
@@ -32,19 +53,104 @@
     border: none;
 
     @media (min-width: $tablet-width) {
-      min-width: 150px;
+      min-width: 124px;
       display: block;
       background-color: transparent;
+    }
+  }
+
+  &--promo::before {
+    content: "ХИТ";
+    position: absolute;
+    background-color: $primary-color;
+    font-size: 14px;
+    width: 171px;
+    top: 17px;
+    left: -58px;
+    height: 23px;
+    line-height: 25px;
+    font-weight: 400;
+    transform: rotate(-45deg);
+
+    @media (min-width: $tablet-width) {
+      width: 96px;
+      top: 15px;
+      left: -27px;
+      height: 19px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 155px;
+      top: 17px;
+      left: -47px;
+      height: 23px;
+      line-height: 23px;
     }
   }
 }
 
 .price-table__cell {
-  border: 1px solid $primary-text-color;
+  text-transform: uppercase;
+  padding: 14px 14px 14px 21px;
+  background-color: $base-bg-color;
+  border: 2px solid $table-border-color;
+  font-size: 14px;
+  color: $primary-text-color;
+
+  @media (min-width: $tablet-width) {
+    text-transform: initial;
+    padding: 3px 14px 7px 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding: 8px 14px 14px 20px;
+  }
+
+  span {
+    border: none;
+    padding: 0;
+  }
 
   &--hidden {
     @media (min-width: $tablet-width) {
-      display: none;
+      font-size: 0;
+    }
+  }
+
+  &--yes {
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    background-size: 31px auto;
+    background-position: 93% 48%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 50% 42%;
+    }
+  }
+
+  &--yes-modified {
+    background-image: url("../img/yes.svg");
+    background-repeat: no-repeat;
+    background-size: 31px auto;
+    background-position: 93% 48%;
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/no.svg");
+      background-position: 51% 37%;
+      background-size: 27px auto;
+    }
+  }
+
+  &--no {
+    background-image: url("../img/no.svg");
+    background-repeat: no-repeat;
+    background-size: 27px auto;
+    background-position: 93% 56%;
+
+    @media (min-width: $tablet-width) {
+      background-position: 51% 37%;
     }
   }
 }
