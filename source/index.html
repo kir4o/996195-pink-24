@@ -71,17 +71,29 @@
     <div class="advantages">
       <div class="advantages__wrapper container">
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item--pic1">
+          <li class="advantages__item">
+            <div class="advantages__item-image">
+              <img src="img/iphone3-1.png" alt="Заводит новых друзей">
+            </div>
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
               несколько кликов!</p>
           </li>
-          <li class="advantages__item advantages__item--pic2">
+          <li class="advantages__item">
+            <div class="advantages__item-image">
+              <img src="img/iphone3-2.png" alt="Заводит новых друзей">
+            </div>
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
               <br>усилить эффект</p>
           </li>
-          <li class="advantages__item  advantages__item--image advantages__item--pic3">
+          <li class="advantages__item">
+            <div class="advantages__item-image">
+              <picture>
+                <source srcset="img/iphone3-3.png" media="(min-width: 1200px)">
+                <img src="img/iphone3.png" alt="Заводит новых друзей">
+              </picture>
+            </div>
             <h3 class="advantages__title">Заводит <br class="advantages__title-br"> новых друзей</h3>
             <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите
               новых</p>
@@ -107,7 +119,8 @@
       <div class="effect__text">
         <h2>Эффект <br>на 24 часа!</h2>
         <p>Британские ученые провели исследования и доказали,
-          <br class="effect__text-break2"> что положительный эффект<br class="effect__text-break1"> от использования приложения длится целые сутки!</p>
+          <br class="effect__text-break1"> что положительный эффект<br class="effect__text-break2"> от использования приложения длится целые сутки!
+        </p>
         <a href="https://htmlacademy.ru/intensive/adaptive">Узнать больше об исследовании</a>
       </div>
     </div>
@@ -136,7 +149,6 @@
   <section class="price">
     <h2 class="visually-hidden">Цены</h2>
 
-    <!--    Не получается заставить price__wrapper на 321px-619px оставаться всегда по центру, с padding 20px по краям? он прижимается влево-->
     <div class="price__wrapper">
       <div class="price__slider">
         <table class="price-table">
@@ -147,7 +159,7 @@
                 База
                 <span>1,99 USD</span>
               </th>
-              <th class="price-table__head-cell price-table__head-cell--promo">
+              <th class="price-table__head-cell price-table__head-cell--promo" data-text="ХИТ">
                 Стандарт
                 <span>3,99 USD</span>
               </th>

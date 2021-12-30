@@ -60,7 +60,7 @@
   }
 
   &--promo::before {
-    content: "ХИТ";
+    content: attr(data-text);
     position: absolute;
     background-color: $primary-color;
     font-size: 14px;
