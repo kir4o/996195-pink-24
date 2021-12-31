@@ -1,0 +1,35 @@
+.toggles {
+  height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toggles__item {
+  margin: 0 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background-color: rgba($primary-text-color, 0.3);
+
+  &:hover {
+    background-color: rgba($primary-text-color, 0.6);
+  }
+
+  &:active {
+    background-color: rgba($primary-text-color, 0.1);
+  }
+
+  &--active {
+    box-shadow: 0 0 0 3px $primary-text-color;
+    cursor: pointer;
+    background-color: transparent;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+}

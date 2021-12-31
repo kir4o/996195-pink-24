@@ -1,13 +1,39 @@
 .main-nav {
-  position: absolute;
-  top: 66px;
-  left: 0;
   width: 100%;
-  z-index: 9;
   background-color: $primary-text-color;
 
   &--closed {
-    display: none;
+    .main-nav__toggle {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        z-index: 99;
+        height: 3px;
+        background-color: $base-bg-color;
+        box-shadow: 0 9px 0 0 $base-bg-color, 0 18px 0 0 $base-bg-color;
+      }
+
+      &:hover::before {
+        background-color: $primary-color;
+        box-shadow: 0 9px 0 0 $primary-color, 0 18px 0 0 $primary-color;
+      }
+
+      &:active::before {
+        background-color: rgba($primary-color, 0.3);
+        box-shadow: 0 9px 0 0 rgba($primary-color, 0.3), 0 18px 0 0 rgba($primary-color, 0.3);
+      }
+    }
+
+    .main-nav__list {
+      display: none;
+
+      @media (min-width: $desktop-width) {
+        display: flex;
+      }
+    }
 
     @media (min-width: $desktop-width) {
       display: block;
@@ -16,11 +42,64 @@
   }
 
   &--opened {
-    display: block;
+    .main-nav__list {
+      display: block;
+    }
+
+    .main-nav__toggle {
+      top: 24px;
+      right: 12px;
+
+      &::before,
+      &::after {
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+        top: 8px;
+        right: 5px;
+        width: 30px;
+        height: 3px;
+        background-color: $base-bg-color;
+      }
+
+      &::after {
+        transform: rotate(-45deg);
+      }
+
+      &:hover::before,
+      &:hover::after {
+        background-color: $primary-color;
+      }
+
+      &:active::before,
+      &:active::after {
+        background-color: rgba($primary-color, 0.3);
+      }
+
+      @media (min-width: $tablet-width) {
+        top: 44px;
+      }
+    }
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  width: 50px;
+  height: 23px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+
+  @media (min-width: $tablet-width) {
+    top: 44px;
   }
 
   @media (min-width: $desktop-width) {
-    position: static;
+    display: none;
   }
 }
 
@@ -32,10 +111,20 @@
     text-decoration: none;
   }
 
+  a[href]:hover {
+    color: $primary-color;
+  }
+
+  a[href]:active {
+    color: rgba($secondary-text-color, 0.3);
+    text-shadow: 1px 1px 1px $headers-text-color;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
+    padding-left: 20px;
   }
 }
 
@@ -46,6 +135,19 @@
   width: auto;
   text-align: center;
 
+  a {
+    @media (max-width: $tablet-width-only) {
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+  }
+
+  @media (max-width: $tablet-width-only) {
+    border-top: 1px solid $headers-text-color;
+    //в макете 24px расстояние, но если сделать так, в реальности выглядит намного больше
+    padding: 15px 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 80px;
     font-size: 18px;
@@ -53,6 +155,10 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--active {
+      border-bottom: 2px solid $secondary-text-color;
     }
   }
 }
