@@ -10,7 +10,6 @@
     display: block;
     text-transform: uppercase;
     color: $primary-color;
-    padding-left: 24px;
     line-height: 36px;
     font-family: "Open Sans", sans-serif;
 
@@ -46,6 +45,10 @@
     color: $primary-text-color;
     border: 2px solid $table-border-color;
     border-radius: 3px;
+
+    @media (min-width: $tablet-width) {
+      max-height: 194px;
+    }
   }
 }
 
