@@ -52,6 +52,16 @@
   width: 300%;
   transition: transform 1s ease;
 
+  @media (min-width: 320px) and (max-width: 659px) {
+    transform: translateX(-50%);
+    position: relative;
+    left: 50%;
+  }
+
+  @media (min-width: 321px) and (max-width: 659px) {
+    transform: translateX(-48%);
+  }
+
   @media (min-width: $tablet-width) {
     width: auto;
     transform: translate(0);
