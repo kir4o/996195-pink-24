@@ -182,6 +182,12 @@
     border: 2px solid $primary-color;
   }
 
+  &--desktop {
+    @media (min-width: $desktop-width) {
+      margin-left: 17px;
+    }
+  }
+
   &--radio {
     margin-bottom: 35px;
     width: 100%;

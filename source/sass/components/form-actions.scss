@@ -35,6 +35,12 @@
     width: 300px;
     height: 63px;
   }
+
+  &--modal {
+    @media (min-width: $desktop-width) {
+      width: 460px;
+    }
+  }
 }
 
 .form-actions__legend {

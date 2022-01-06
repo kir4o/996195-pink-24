@@ -1,18 +1,86 @@
 .modal {
   display: none;
+  position: fixed;
+  top: 25%;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $base-bg-color;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+    padding-top: 40px;
+  }
 }
 
 .modal__title {
   text-align: center;
   font-size: 18px;
-  margin: 20px 0;
+  margin: 35px 0 20px 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+    width: 259px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
 
 .modal__description {
   color: $primary-text-color;
   text-align: center;
+  padding: 0 23px;
+  line-height: 24px;
+  margin-bottom: 35px;
+
+  br {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 5px 70px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 170px 14px 170px;
+  }
+
+  &--error {
+    @media (min-width: $desktop-width) {
+      padding: 0 204px;
+    }
+  }
 }
 
-.modal__button {
-  margin: 20px 0;
+.modal__button-wrapper {
+  padding: 50px 0;
+  background-color: $secondary-bg-color;
+
+  &--error {
+    background-color: transparent;
+    padding: 7px 0 50px 0;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 108px;
+    }
+  }
 }
