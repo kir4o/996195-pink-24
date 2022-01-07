@@ -1,10 +1,119 @@
 .filter-controls {
-  margin: 25px auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin: 0 auto;
+  padding: 39px 10px 21px 33px;
 
   @media (min-width: $tablet-width) {
+    display: block;
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    padding-left: 0;
+    width: 456px;
+  }
+}
+
+.filter-controls__item {
+  display: inline-block;
+  margin-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 13px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgba($primary-text-color, 0.1);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+    margin-right: 47px;
+  }
+
+  .range-control {
     display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+      margin: 0 0 0 18px;
+      width: 202px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 0 46px;
+      width: 289px;
+    }
+  }
+}
+
+.filter-controls__button {
+  position: relative;
+  width: 56px;
+  height: 56px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover .filter-controls__icon {
+    @media (max-width: $tablet-width) {
+      fill: rgba($primary-text-color, 0.5);
+    }
+  }
+
+  &--active:hover .filter-controls__icon {
+    @media (max-width: $tablet-width) {
+      fill: $primary-color;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 43px;
+    height: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 43px;
+    height: 43px;
+  }
+}
+
+.filter-controls__icon {
+  position: absolute;
+  fill: #b5b9be;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &--crop {
+    fill: $primary-color;
+  }
+
+  &--contrast {
+    top: 47%;
+    left: 43%;
+  }
+
+  @media (min-width: $tablet-width) {
+    fill: $primary-color;
+    width: 28px;
+    height: 28px;
+
+    &--contrast {
+      width: 19px;
+      height: 19px;
+      margin-left: 3px;
+    }
+  }
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+
+    &--contrast {
+      width: 36px;
+      height: 36px;
+      margin-left: 3px;
+    }
   }
 }
