@@ -41,6 +41,7 @@
 }
 
 .advantages__list {
+
   @include clear-list;
   text-align: center;
 
@@ -78,6 +79,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 310px;
     overflow: visible;
+
     &:last-child {
       padding-top: 6px;
     }
@@ -158,7 +160,6 @@
       display: none;
     }
   }
-
 
   &:last-child {
     margin-bottom: 0;
