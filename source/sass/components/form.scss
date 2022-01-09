@@ -17,7 +17,6 @@
   }
 
   & .form__fio {
-    
     @media (min-width: $tablet-width) {
       border: none;
     }
@@ -355,7 +354,8 @@
       top: 0;
       right: 0;
       width: 62px;
-      height: 100%;
+      height: 94%;
+      margin: 2px;
     }
 
     &--phone::before {

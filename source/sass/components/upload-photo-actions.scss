@@ -19,6 +19,7 @@
   color: $primary-color;
   border: 2px solid $primary-color;
   width: 280px;
+  background-color: transparent;
 
   @media (min-width: $tablet-width) {
     margin: 12px 0 23px 27px;
@@ -38,6 +39,7 @@
 
   &:active {
     color: rgba($base-bg-color, 0.3);
+    background-color: $primary-color;
   }
 }
 
