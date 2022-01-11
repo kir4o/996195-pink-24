@@ -62,7 +62,6 @@
 }
 
 .form__wrapper {
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -109,7 +108,6 @@
   margin-bottom: 16px;
 
   input {
-
     &:hover {
       border-color: $primary-text-color;
     }
@@ -188,7 +186,6 @@
   }
 
   &--desktop {
-
     @media (min-width: $desktop-width) {
       margin-left: 17px;
     }
@@ -208,7 +205,6 @@
   }
 
   @media (min-width: $desktop-width) {
-
     &:nth-child(2) {
       order: 1;
     }
@@ -346,7 +342,6 @@
 
 
   @media (min-width: $tablet-width) {
-
     &--phone::before,
     &--email::before {
       content: "";
@@ -372,7 +367,6 @@
   margin-bottom: 16px;
 
   input {
-
     &:hover {
       border-color: $primary-text-color;
     }
@@ -395,7 +389,6 @@
 
 .form__contacts-input-text--phone,
 .form__contacts-input-text--email {
-
   @media (min-width: $tablet-width) {
     position: relative;
     flex-direction: column-reverse;
@@ -461,7 +454,6 @@
   padding: 30px;
 
   textarea {
-
     &:hover {
       border-color: $primary-text-color;
     }

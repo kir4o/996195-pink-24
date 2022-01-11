@@ -4,10 +4,10 @@
   margin: 0 auto 24px;
   display: block;
   background-color: transparent;
-  -webkit-appearance: none;
+  //-webkit-appearance: none; - потом добавим в сборку
 
   &::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
     margin-top: -5px;
     background-color: $base-bg-color;
     border: 2px solid $primary-color;
@@ -23,7 +23,7 @@
   }
 
   &::-moz-range-thumb {
-    -webkit-appearance: none;
+    //-webkit-appearance: none;
     background-color: $base-bg-color;
     border: 2px solid $primary-color;
     box-sizing: border-box;
