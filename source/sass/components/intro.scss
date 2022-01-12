@@ -52,15 +52,39 @@
   }
 
   &--secondary {
-    padding: 40px 0;
+    padding: 29px 0 43px 0;
     margin: 0 auto;
+    line-height: 33px;
 
     @media (min-width: $tablet-width) {
       height: 180px;
-      font-size: 40px;
-      padding: 40px 0;
+      font-size: 50px;
+      padding: 66px 0 84px 0;
       margin: 0 auto;
       width: 620px;
+      line-height: 68px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: auto;
+      padding: 62px 0 42px 0;
+    }
+  }
+
+  &--catalog {
+    padding: 29px 0 76px 0;
+    margin: 0 auto;
+    line-height: 33px;
+
+    @media (min-width: $tablet-width) {
+      width: auto;
+      font-size: 50px;
+      line-height: 68px;
+      padding: 66px 0 128px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 60px 170px 88px 170px;
     }
   }
 }

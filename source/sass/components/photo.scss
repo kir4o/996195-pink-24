@@ -1,6 +1,14 @@
 .photo {
   color: $primary-text-color;
-  padding: 40px 0;
+  padding: 43px 0 0 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 92px 0 24px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 92px 0 0 0;
+  }
 }
 
 .photo__description {
@@ -8,7 +16,16 @@
   font-weight: 400;
   text-align: center;
   color: $primary-text-color;
-  padding-bottom: 49px;
+  padding: 0 16px 51px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    padding: 0 32px 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 160px 88px;
+  }
 }
 
 .photo__wrapper {
