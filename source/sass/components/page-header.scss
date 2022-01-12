@@ -4,12 +4,26 @@
   background-repeat: no-repeat;
   background-color: $main-fill-color;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
-    background-size: 100% 727px;
+    background-size: cover;
+    background-image: url("../img/back-tablet.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.png");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-size: 100% 852px;
+    background-image: url("../img/back-desktop.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.png");
+    }
   }
 }
 
