@@ -105,6 +105,16 @@
   bottom: -36px;
   transform: translateX(-50%);
 
+  img {
+    @media (min-width: $desktop-width) {
+      height: 385px;
+    }
+
+    @media (min-resolution: 2dppx) and (min-width: $desktop-width) {
+      height: 385px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     bottom: -42px;
     left: 0;

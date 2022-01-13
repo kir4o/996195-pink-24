@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page__body">
@@ -73,7 +89,7 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <div class="advantages__item-image">
-              <img src="img/iphone3-1.png" alt="Заводит новых друзей">
+              <img src="img/iphone3-1.png" srcset="img/iphone3-1@2x.png 2x" alt="Заводит новых друзей">
             </div>
             <h3 class="advantages__title">Поднимает настроение</h3>
             <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в
@@ -81,7 +97,7 @@
           </li>
           <li class="advantages__item">
             <div class="advantages__item-image">
-              <img src="img/iphone3-2.png" alt="Заводит новых друзей">
+              <img src="img/iphone3-2.png" srcset="img/iphone3-2@2x.png 2x" alt="Заводит новых друзей">
             </div>
             <h3 class="advantages__title">Меняет мир вокруг</h3>
             <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
@@ -90,8 +106,9 @@
           <li class="advantages__item">
             <div class="advantages__item-image">
               <picture>
-                <source srcset="img/iphone3-3.png" media="(min-width: 1200px)">
-                <img src="img/iphone3.png" alt="Заводит новых друзей">
+                <source media="(min-width: 1200px)" srcset="img/iphone3-3.png, img/iphone3-3@2x.png 2x">
+                <source media="(min-width: 660px)" srcset="img/iphone3-tablet.png, img/iphone3-tablet@2x.png 2x">
+                <img src="img/iphone3.png" srcset="img/iphone3@2x.png 2x" alt="Заводит новых друзей">
               </picture>
             </div>
             <h3 class="advantages__title">Заводит <br class="advantages__title-br"> новых друзей</h3>

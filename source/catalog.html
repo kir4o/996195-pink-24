@@ -5,6 +5,22 @@
   <title>HTML Academy: Пинк - Фотографии пользователей</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#ffffff">
 </head>
 <body class="page__body">
 <!--SVG-->
@@ -79,7 +95,12 @@
 
     <ul class="photo__wrapper">
       <li class="photo-content photo-content--panorama">
-        <a class="photo-content__picture-panorama" href="#" target="_blank"><img src="img/photos/panorama-tablet.png" alt="Панорама дня">
+        <a class="photo-content__picture-panorama" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/panorama-desktop.png 1x, img/photos/panorama-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/panorama-tablet.png 1x, img/photos/panorama-tablet@2x.png 2x">
+            <img src="img/photos/panorama-mobile.png" srcset="img/photos/panorama-mobile@2x.png 2x" alt="Панорама дня">
+          </picture>
           <span class="photo-content__label">Панорама дня</span>
         </a>
 
@@ -102,7 +123,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-1-mobile.png" alt="Дядя любит ВАГ"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-1-desktop.png 1x, img/photos/photo-1-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-1-tablet.png 1x, img/photos/photo-1-tablet@2x.png 2x">
+            <img src="img/photos/photo-1-mobile.png" srcset="img/photos/photo-1-mobile@2x.png 2x" alt="Дядя любит ВАГ">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Левон<span>(5 часов назад)</span></p>
           <p class="photo-content__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
@@ -118,7 +145,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-2-mobile.png" alt="Соседи страдать!"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-2-desktop.png 1x, img/photos/photo-2-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-2-tablet.png 1x, img/photos/photo-2-tablet@2x.png 2x">
+            <img src="img/photos/photo-2-mobile.png" srcset="img/photos/photo-2-mobile@2x.png 2x" alt="Соседи страдать!">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Антон<span>(12 часов назад)</span></p>
           <p class="photo-content__description">Соседи будут рады!</p>
@@ -134,7 +167,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-3-tablet.png" alt="Чувак рефлексирует"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-3-desktop.png 1x, img/photos/photo-3-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-3-tablet.png 1x, img/photos/photo-3-tablet@2x.png 2x">
+            <img src="img/photos/photo-3-mobile.png" srcset="img/photos/photo-3-mobile@2x.png 2x" alt="Чувак рефлексирует">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Борис<span>(20 часов назад)</span></p>
           <p class="photo-content__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
@@ -150,7 +189,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-4-tablet.png" alt="Арбузы топчик"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-4-desktop.png 1x, img/photos/photo-4-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-4-tablet.png 1x, img/photos/photo-4-tablet@2x.png 2x">
+            <img src="img/photos/photo-4-mobile.png" srcset="img/photos/photo-4-mobile@2x.png 2x" alt="Арбузы топчик">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Сергей<span>(25 часов назад)</span></p>
           <p class="photo-content__description">Самая кубанская в мире!</p>
@@ -166,7 +211,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-5-tablet.png" alt="Снега нет"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-5-desktop.png 1x, img/photos/photo-5-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-5-tablet.png 1x, img/photos/photo-5-tablet@2x.png 2x">
+            <img src="img/photos/photo-5-mobile.png" srcset="img/photos/photo-5-mobile@2x.png 2x" alt="Снега нет">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Максим<span>(40 часов назад)</span></p>
           <p class="photo-content__description">Где снег-то?</p>
@@ -182,7 +233,13 @@
       </li>
 
       <li class="photo-content">
-        <a class="photo-content__picture" href="#" target="_blank"><img src="img/photos/photo-6-tablet.png" alt="Смотрите, я улетела в отпуск"></a>
+        <a class="photo-content__picture" href="#" target="_blank">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photos/photo-6-desktop.png 1x, img/photos/photo-6-desktop@2x.png 2x">
+            <source media="(min-width: 660px)" srcset="img/photos/photo-6-tablet.png 1x, img/photos/photo-6-tablet@2x.png 2x">
+            <img src="img/photos/photo-6-mobile.png" srcset="img/photos/photo-6-mobile@2x.png 2x" alt="Смотрите, я улетела в отпуск">
+          </picture>
+        </a>
         <div class="photo-content__wrapper">
           <p class="photo-content__title">Надежда<span>(45 часов назад)</span></p>
           <p class="photo-content__description">Всем GM и взаимные лайки!</p>
@@ -209,7 +266,11 @@
 
     <form action="https://echo.htmlacademy.ru" method="post" class="upload-photo__form container">
       <a class="upload-photo__picture" href="#" target="_blank">
-        <img src="img/photos/photo-7-tablet.png" alt="Загрузить фотографию">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/photos/photo-upload-desktop.png 1x, img/photos/photo-upload-desktop@2x.png 2x">
+          <source media="(min-width: 660px)" srcset="img/photos/photo-upload-tablet.png 1x, img/photos/photo-upload-tablet@2x.png 2x">
+          <img src="img/photos/photo-upload.png" srcset="img/photos/photo-upload@2x.png 2x" alt="Загрузить фотографию">
+        </picture>
       </a>
 
       <div class="filter-controls">
