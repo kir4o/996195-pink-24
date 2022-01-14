@@ -26,9 +26,17 @@
   flex-grow: 0;
   text-align: center;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   a {
     display: block;
     cursor: pointer;
+
+    svg {
+      fill: $primary-text-color;
+    }
 
     &:hover svg {
       fill: $primary-color;
@@ -41,6 +49,20 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+}
+
+.page-footer__logo-icon {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-footer__logo-icon-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
   }
 }
 
