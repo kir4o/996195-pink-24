@@ -98,6 +98,7 @@ export const sprite = () => {
 const scripts = () => {
   return gulp.src('source/js/main-nav.js')
     .pipe(terser())
+    .pipe(rename('main-nav.min.js'))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
 }
