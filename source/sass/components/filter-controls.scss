@@ -88,11 +88,15 @@
 
   &--crop {
     fill: $primary-color;
+    top: 42%;
+  }
+
+  &--fill {
+    top: 43%;
   }
 
   &--contrast {
-    top: 47%;
-    left: 43%;
+    left: 56%;
   }
 
   @media (min-width: $tablet-width) {
@@ -103,7 +107,19 @@
     &--contrast {
       width: 19px;
       height: 19px;
-      margin-left: 3px;
+      left: 51%;
+      top: 53%;
+    }
+
+    &--crop {
+      width: 26px;
+      height: 26px;
+    }
+
+    &--fill {
+      top: 50%;
+      width: 25px;
+      height: 25px;
     }
   }
 

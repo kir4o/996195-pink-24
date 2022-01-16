@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>HTML Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="js/main-nav.min.js" as="script">
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
@@ -19,8 +22,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
   <link rel="manifest" href="manifest.json">
-  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page__body">
@@ -114,6 +119,10 @@
           <li class="advantages__item">
             <div class="advantages__item-image">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/iphone3-3.webp 1x, img/iphone3-3@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/iphone3-tablet.webp 1x, img/iphone3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/iphone3.webp, img/iphone3@2x.webp 2x">
+
                 <source media="(min-width: 1200px)" srcset="img/iphone3-3.png, img/iphone3-3@2x.png 2x">
                 <source media="(min-width: 660px)" srcset="img/iphone3-tablet.png, img/iphone3-tablet@2x.png 2x">
                 <img src="img/iphone3.png" srcset="img/iphone3@2x.png 2x" alt="Заводит новых друзей">
@@ -318,6 +327,6 @@
   </div>
 </footer>
 
-<script src="js/main-nav.js"></script>
+<script src="js/main-nav.min.js"></script>
 </body>
 </html>
