@@ -1,6 +1,9 @@
 const mainNav = document.querySelector('.main-nav')
 const mainNavWrapper = document.querySelector('.page-header__wrapper')
 const mainNavToggle = document.querySelector('.main-nav__toggle')
+const mainHeader = document.querySelector('.page-header')
+
+mainHeader.classList.remove('page-header--nojs');
 
 mainNavToggle.addEventListener('click', () => {
   if (mainNav.classList.contains('main-nav--closed')) {
