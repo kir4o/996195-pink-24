@@ -27,6 +27,44 @@
   }
 }
 
+.page-header--secondary.page-header--nojs {
+  background-position: 50% 90%;
+  background-color: $primary-text-color;
+}
+
+.page-header--nojs {
+  background-position: 50% 48%;
+
+  .intro {
+    padding-top: 258px;
+    background-position: 50% 57%;
+
+    @media (min-width: $desktop-width) {
+      padding-top: 0;
+    }
+  }
+
+  .page-header__wrapper {
+    background-color: $primary-text-color;
+
+    @media (min-width: $desktop-width) {
+      background-color: $headers-text-color-opacity;
+    }
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  nav .main-nav__list {
+    display: block;
+
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
+}
+
 .page-header__logo-image {
   width: 73px;
   height: auto;
