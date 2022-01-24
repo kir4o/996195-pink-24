@@ -1,6 +1,20 @@
 .field-input {
-  display: block;
-  padding: 15px;
-  font-size: 18px;
-  color: $primary-text-color;
+  &:hover {
+    border-color: $primary-text-color;
+  }
+
+  &:focus {
+    border-color: $primary-color;
+    outline: none;
+  }
+
+  &:hover .form__choice-radio,
+  &:hover .form__choice-checkbox {
+    border: 2px solid $primary-text-color;
+  }
+
+  &:active .form__choice-radio,
+  &:active .form__choice-checkbox {
+    border: 2px solid $primary-color;
+  }
 }

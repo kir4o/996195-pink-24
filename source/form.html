@@ -71,7 +71,7 @@
   </section>
 </header>
 
-<main class="page-main">
+<main>
   <section class="form">
     <h2 class="form__title container">
       Поделитесь своей историей и получите
@@ -86,15 +86,15 @@
           <h3 class="visually-hidden">ФИО</h3>
           <label class="form-input-text form__fio-input-text">
             <span>Фамилия:</span>
-            <input type="text" name="surname" placeholder="Укажите фамилию *" required>
+            <input class="field-input" type="text" name="surname" placeholder="Укажите фамилию *" required tabindex="1">
           </label>
           <label class="form-input-text form__fio-input-text">
             <span>Имя:</span>
-            <input type="text" name="firstname" placeholder="Введите ваше имя *" required>
+            <input class="field-input" type="text" name="firstname" placeholder="Введите ваше имя *" required tabindex="2">
           </label>
           <label class="form-input-text form__fio-input-text">
             <span>Отчество:</span>
-            <input type="text" name="middlename" placeholder="Ну и отчество тоже">
+            <input class="field-input" type="text" name="middlename" placeholder="Ну и отчество тоже" tabindex="3">
           </label>
         </div>
       </fieldset>
@@ -103,33 +103,33 @@
         <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
         <div class="form__achievements-container">
           <h3 class="form-set-header">Ваши безбашенные достижения в путешествии</h3>
-          <label class="choice form__choice">
-            <input class="form__choice-checkbox-input" type="checkbox" name="selfie-made" checked>
+          <label class="choice form__choice field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="selfie-made" checked>
             <span class="form__choice-checkbox"></span>
             <span>Сделал селфи с акулой</span>
           </label>
-          <label class="choice form__choice">
-            <input class="form__choice-checkbox-input" type="checkbox" name="burned-out" checked>
+          <label class="choice form__choice field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="burned-out" checked>
             <span class="form__choice-checkbox"></span>
             <span>Обгорел на пляже</span>
           </label>
-          <label class="choice form__choice form__choice--desktop">
-            <input class="form__choice-checkbox-input" type="checkbox" name="chuck-seen">
+          <label class="choice form__choice form__choice--desktop field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="chuck-seen">
             <span class="form__choice-checkbox"></span>
             <span>Видел Чака Норриса</span>
           </label>
-          <label class="choice form__choice form__choice--desktop">
-            <input class="form__choice-checkbox-input" type="checkbox" name="souvenirs-bought">
+          <label class="choice form__choice form__choice--desktop field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="souvenirs-bought">
             <span class="form__choice-checkbox"></span>
             <span>Накупил сувениров</span>
           </label>
-          <label class="choice form__choice">
-            <input class="form__choice-checkbox-input" type="checkbox" name="tower-kept" checked>
+          <label class="choice form__choice field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="tower-kept" checked>
             <span class="form__choice-checkbox"></span>
             <span>Удержал башню</span>
           </label>
-          <label class="choice form__choice">
-            <input class="form__choice-checkbox-input" type="checkbox" name="hotel-destroyed">
+          <label class="choice form__choice field-input">
+            <input class="form__choice-checkbox-input visually-hidden" type="checkbox" name="hotel-destroyed">
             <span class="form__choice-checkbox"></span>
             <span>Разгромил отель</span>
           </label>
@@ -141,13 +141,13 @@
           <label class="form-input-text form__contacts-input-text form__contacts-input-text--phone">
             <span class="form__contacts__input-label">Номер телефона</span>
             <span class="form__contacts-wrapper form__contacts-wrapper--phone">
-              <input type="tel" name="phone" placeholder="Номер, пожалуйста">
+              <input class="field-input" type="tel" name="phone" placeholder="Номер, пожалуйста" tabindex="7">
             </span>
           </label>
           <label class="form-input-text form__contacts-input-text form__contacts-input-text--email">
             <span class="form__contacts__input-label">Адрес почты</span>
             <span class="form__contacts-wrapper form__contacts-wrapper--email">
-              <input type="email" name="email" placeholder="Введите почту *" required>
+              <input class="field-input" type="email" name="email" placeholder="Введите почту *" required tabindex="8">
             </span>
           </label>
         </div>
@@ -156,18 +156,18 @@
         <legend class="form__legend">С каким приложением путешествовали?</legend>
         <div class="form__application-container">
           <h3 class="form-set-header">С каким приложением путешествовали?</h3>
-          <label class="choice form__choice form__choice--radio">
-            <input class="form__choice-radio-input" type="radio" name="application" checked value="ios">
+          <label class="choice form__choice form__choice--radio field-input">
+            <input class="form__choice-radio-input visually-hidden" type="radio" name="application" checked value="ios" tabindex="4">
             <span class="form__choice-radio"></span>
             <span>Pink для iOS</span>
           </label>
-          <label class="choice form__choice form__choice--radio">
-            <input class="form__choice-radio-input" type="radio" name="application" value="android">
+          <label class="choice form__choice form__choice--radio field-input">
+            <input class="form__choice-radio-input visually-hidden" type="radio" name="application" value="android" tabindex="5">
             <span class="form__choice-radio"></span>
             <span>Pink на Android</span>
           </label>
-          <label class="choice form__choice form__choice--radio">
-            <input class="form__choice-radio-input" type="radio" name="application" value="windows">
+          <label class="choice form__choice form__choice--radio field-input">
+            <input class="form__choice-radio-input visually-hidden" type="radio" name="application" value="windows" tabindex="6">
             <span class="form__choice-radio"></span>
             <span>Windows Phone</span>
           </label>

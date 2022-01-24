@@ -41,7 +41,7 @@
   font-weight: 400;
   text-align: center;
   color: $primary-text-color;
-  margin-bottom: 33px;
+  margin: 0 auto 33px auto;
 
   span {
     display: none;
@@ -107,17 +107,6 @@
 .form__fio-input-text {
   margin-bottom: 16px;
 
-  input {
-    &:hover {
-      border-color: $primary-text-color;
-    }
-
-    &:focus {
-      border-color: $primary-color;
-      outline: none;
-    }
-  }
-
   span {
     padding-left: 24px;
 
@@ -173,18 +162,6 @@
   align-items: center;
   cursor: pointer;
 
-  input {
-    display: none;
-  }
-
-  &:hover .form__choice-checkbox {
-    border: 2px solid $primary-text-color;
-  }
-
-  &:active .form__choice-checkbox {
-    border: 2px solid $primary-color;
-  }
-
   &--desktop {
     @media (min-width: $desktop-width) {
       margin-left: 17px;
@@ -194,14 +171,6 @@
   &--radio {
     margin-bottom: 35px;
     width: 100%;
-
-    &:hover .form__choice-radio {
-      border: 2px solid $primary-text-color;
-    }
-
-    &:active .form__choice-radio {
-      border: 2px solid $primary-color;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -285,6 +254,11 @@
   }
 }
 
+.form__choice-checkbox-input:focus-visible + .form__choice-checkbox,
+.form__choice-radio-input:focus-visible + .form__choice-radio {
+  border: 2px solid $primary-text-color;
+}
+
 .form__choice-radio-input:checked + .form__choice-radio::before {
   content: "";
   position: absolute;
@@ -366,17 +340,6 @@
 .form__contacts-input-text {
   margin-bottom: 16px;
 
-  input {
-    &:hover {
-      border-color: $primary-text-color;
-    }
-
-    &:focus {
-      border-color: $primary-color;
-      outline: none;
-    }
-  }
-
   .form__contacts-wrapper {
     padding: 0;
   }
@@ -394,7 +357,6 @@
     flex-direction: column-reverse;
     align-items: baseline;
     margin-bottom: 25px;
-
 
     span:first-child {
       display: block;
@@ -454,15 +416,6 @@
   padding: 30px;
 
   textarea {
-    &:hover {
-      border-color: $primary-text-color;
-    }
-
-    &:focus {
-      border-color: $primary-color;
-      outline: none;
-    }
-
     @media (min-width: $tablet-width) {
       margin: 30px auto 0 auto;
       width: 500px;

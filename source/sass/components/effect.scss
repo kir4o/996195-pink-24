@@ -4,10 +4,16 @@
   @media (min-width: $tablet-width) {
     display: block;
     padding-top: 50px;
+
+    h2 {
+      margin: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 40px;
+    padding-bottom: 55px;
+    background-color: $secondary-bg-color;
   }
 }
 
@@ -54,7 +60,6 @@
   @media (min-width: $desktop-width) {
     justify-content: start;
   }
-
 
   .effect__text-break1 {
     @media (min-width: $tablet-width) {
