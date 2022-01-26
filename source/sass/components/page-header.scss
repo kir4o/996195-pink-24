@@ -133,22 +133,22 @@
   &--opened {
     background-color: $primary-text-color;
   }
+}
 
-  a[href]:hover {
-    cursor: pointer;
+.page-header__logo-image[href] {
+  cursor: pointer;
+}
 
-    svg {
-      fill: $primary-color;
-    }
-  }
+.page-header__logo-image[href]:hover svg {
+  fill: $primary-color;
+}
 
-  a[href]:active {
-    color: rgba($secondary-text-color, 0.3);
-    text-shadow: 1px 1px 1px $headers-text-color;
+.page-header__logo-image[href]:active {
+  color: rgba($secondary-text-color, 0.3);
+  text-shadow: 1px 1px 1px $headers-text-color;
 
-    path {
-      fill: rgba($secondary-text-color, 0.3);
-    }
+  path {
+    fill: rgba($secondary-text-color, 0.3);
   }
 }
 

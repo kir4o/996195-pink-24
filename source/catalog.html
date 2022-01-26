@@ -2,8 +2,12 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
-  <title>HTML Academy: Пинк - Фотографии пользователей</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк - Фотографии пользователей</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="js/main-nav.min.js" as="script">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
@@ -24,7 +28,6 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body class="page__body">
-
 <header class="page-header page-header--secondary page-header--nojs">
   <div class="page-header__wrapper">
     <div class="page-header__wrapper-container">
@@ -71,11 +74,9 @@
     </div>
   </section>
 </header>
-
 <main>
   <section class="photo container">
     <h2 class="photo__description"> Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших? </h2>
-
     <ul class="photo__wrapper">
       <li class="photo-content photo-content--panorama">
         <a class="photo-content__picture-panorama" href="#" target="_blank">
@@ -108,7 +109,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -134,7 +134,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -160,7 +159,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -186,7 +184,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -212,7 +209,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -238,7 +234,6 @@
           </p>
         </div>
       </li>
-
       <li class="photo-content">
         <a class="photo-content__picture" href="#" target="_blank">
           <picture>
@@ -266,7 +261,6 @@
       </li>
     </ul>
   </section>
-
   <section class="upload-photo">
     <h3 class="upload-photo__description">
       <span class="container">
@@ -274,7 +268,6 @@
         <span>Выкладывайте все, что накопилось в телефоне!</span>
       </span>
     </h3>
-
     <form action="https://echo.htmlacademy.ru" method="post" class="upload-photo__form container">
       <a class="upload-photo__picture" href="#" target="_blank">
         <picture>
@@ -287,7 +280,6 @@
           <img src="img/photos/photo-upload.png" srcset="img/photos/photo-upload@2x.png 2x" alt="Загрузить фотографию">
         </picture>
       </a>
-
       <div class="filter-controls">
         <div class="filter-controls__item">
           <button class="filter-controls__button filter-controls__button--active">
@@ -326,7 +318,6 @@
           </label>
         </div>
       </div>
-
       <div class="upload-photo__control">
         <label>
           <span class="visually-hidden">Управление размером</span>
@@ -334,7 +325,6 @@
         </label>
         <hr>
       </div>
-
       <div class="upload-photo-actions">
         <button class="button upload-photo-actions__button upload-photo-actions__button--active" type="submit">Запостить</button>
         <button class="button upload-photo-actions__button upload-photo-actions__button--disabled" type="reset">Отмена</button>
@@ -343,7 +333,6 @@
     </form>
   </section>
 </main>
-
 <footer class="page-footer container">
   <div class="page-footer__wrapper">
     <div class="page-footer__logo">
@@ -406,7 +395,6 @@
     </div>
   </div>
 </footer>
-
 <script src="js/main-nav.min.js"></script>
 </body>
 </html>

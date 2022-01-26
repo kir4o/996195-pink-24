@@ -51,8 +51,10 @@
   @media (min-width: $desktop-width) {
     text-align: center;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 }
 
@@ -88,6 +90,10 @@
     padding-left: 0;
     width: 297px;
     margin: 0;
+
+    &:nth-child(n+4) {
+      margin-top: 30px;
+    }
 
     &:last-child {
       padding-top: 0;

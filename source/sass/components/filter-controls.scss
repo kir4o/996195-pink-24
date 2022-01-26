@@ -86,6 +86,14 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
+  &:hover {
+    fill: rgba($primary-text-color, 0.5);
+  }
+
+  &:active {
+    fill: rgba($primary-text-color, 0.3);
+  }
+
   &--crop {
     fill: $primary-color;
     top: 42%;

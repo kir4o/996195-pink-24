@@ -2,8 +2,12 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="UTF-8">
-  <title>HTML Academy: Пинк - Конкурс</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>HTML Academy: Пинк - Конкурс</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+  <link rel="preload" href="fonts/opensanslight.woff2" as="font">
+  <link rel="preload" href="js/main-nav.min.js" as="script">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
@@ -70,7 +74,6 @@
     </div>
   </section>
 </header>
-
 <main>
   <section class="form">
     <h2 class="form__title container">
@@ -79,7 +82,6 @@
       миль на вашу бонусную карту!
       <span>Пожалуйста, заполните форму ниже:</span>
     </h2>
-
     <form action="https://echo.htmlacademy.ru" method="post" class="form__wrapper">
       <fieldset class="form__fio">
         <div class="form__fio-container">
@@ -98,7 +100,6 @@
           </label>
         </div>
       </fieldset>
-
       <fieldset class="form__achievements">
         <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
         <div class="form__achievements-container">
@@ -185,7 +186,7 @@
       <div class="form-actions">
         <div class="form-actions__submit">
           <label class="form-actions__submit-item">
-            <input class="form-actions__submit-input" type="submit" value="Отправить форму">
+            <input class="form-button" type="submit" value="Отправить форму">
           </label>
         </div>
         <p class="form-actions__legend">
@@ -198,7 +199,7 @@
           уже поступила к нам. В ближайшее время мы рассмотрим ее и <br> оповестим вас.
         </p>
         <div class="modal__button-wrapper">
-          <button class="form-actions__submit-input form-actions__submit-input--modal">Закрыть окно</button>
+          <button class="form-button form-button--modal">Закрыть окно</button>
         </div>
       </div>
       <div class="modal modal-error">
@@ -206,13 +207,12 @@
         <p class="modal__description modal__description--error">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <div class="modal__button-wrapper modal__button-wrapper--error">
-          <button class="form-actions__submit-input">ОК</button>
+          <button class="form-button">ОК</button>
         </div>
       </div>
     </form>
   </section>
 </main>
-
 <footer class="page-footer container">
   <div class="page-footer__wrapper">
     <div class="page-footer__logo">
@@ -275,7 +275,6 @@
     </div>
   </div>
 </footer>
-
 <script src="js/main-nav.min.js"></script>
 </body>
 </html>
